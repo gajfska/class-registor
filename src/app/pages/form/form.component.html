@@ -1,0 +1,30 @@
+<h4>Add a new student</h4>
+<form #studentForm="ngForm" (ngSubmit)="onSubmit(studentForm)" >
+
+  <div class="d-flex justify-content-around align-items-center">
+    <div class="form-group">
+      <label for="firstName">First name</label>
+      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Adam" required ngModel>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last name</label>
+      <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Kowalski" required ngModel>
+    </div>
+    <div class="form-group">
+      <label for="studentClass">Class</label>
+      <select class="form-control" id="studentClass" name="studentClass" placeholder="IVa" required ngModel>
+        <option value="" disabled selected hidden>Select a class</option>
+        <option *ngFor="let studentClass of classes" [value]="studentClass">{{studentClass}}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="studentMark">Mark</label>
+      <input type="number" class="form-control" id="studentMark" name="studentMark" placeholder="4" pattern="^([1-6])$" required ngModel>
+    </div>
+
+    <div>
+      <button class="btn btn-primary" type="submit" [disabled]="!studentForm.valid">{{editMode ? 'Update' : 'Add'}}</button>
+    </div>
+  </div>
+</form>

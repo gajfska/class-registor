@@ -1,0 +1,30 @@
+[
+  {
+    "guid": "54678945654",
+    "firstName": "Kamil",
+    "lastName": "Nowak",
+    "studentClass": "Va",
+    "studentMark": 5
+  },
+	{
+		"guid": "546789117654",
+		"firstName": "Filip",
+		"lastName": "Wiech",
+		"studentClass": "Vb",
+		"studentMark": 3
+	},
+	{
+		"guid": "546789677654",
+		"firstName": "Werka",
+		"lastName": "Kwiat",
+		"studentClass": "VIa",
+		"studentMark": 4
+	},
+	{
+		"guid": "5467883197654",
+		"firstName": "Ania",
+		"lastName": "Omni",
+		"studentClass": "IVc",
+		"studentMark": 1
+	}
+]
